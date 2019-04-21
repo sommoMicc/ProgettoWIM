@@ -30,4 +30,22 @@ Personalmente trovo i prodotti più comuni nei suggerimenti di ricerca molto uti
 	\caption{\label{fig:figura6}} Suggerimenti di ricerca.
 \end{figure}
 
-\subsection{Visualizzazzione risultati}
+\subsection{Visualizzazione risultati}
+\begin{figure}[!htb]
+	\center{\includegraphics[width=\textwidth]
+		{img/figura7.png}}
+	\caption{\label{fig:figura7}} Risultati di ricerca con query "proteine".
+\end{figure}
+In figura 7 è rappresentata la pagina che mostra i risultati di una ricerca. Essa si compone di tre elementi fondamentali:
+\begin{enumerate}
+    \item prodotti risultato della ricerca;
+    \item filtri avanzati;
+    \item ordinamento e navigazione.
+\end{enumerate}
+\paragraph{Prodotti}
+I risultati di ricerca sono disposti in una griglia di tre colonne, raggruppati in pagine, ciascuna contenente 30 elementi.
+Per ogni prodotto è presente la foto, il nome, il rating medio (in stelle, da 0 a 5), eventuali promozioni attive/codici sconto collegati (ad esempio, in figura, "SALDI FINO AL 60\% + 20\% EXTRA | CODICE: MYPSALDI") e, soprattutto, il prezzo. Esso, seppur in caso di prodotti venduti in più varianti (ad esempio, confezione da 1kg e confezione da 2.5kg) si riferisca a quella più economica, non è un prezzo esca, ed è addirittura al lordo degli sconti che si possono applicare con gli eventuali codici sconto reperiti dal sito o dai partner: MyProtein infatti adotta la strateglia dell'\textit{affiliate marketing}, sponsorizzando degli atleti e distribuendo loro dei codici sconto da dare ai loro seguaci validi 365 giorni l'anno. Il prezzo non comprende la spedizione ma, come specificato nell'intestazione di tutte le pagine, essa è gratuita per ordini superiori ai 50 euro. \\
+Ritengo che la rappresentazione dei risultati di ricerca sia stata fatta in maniera molto positiva, ad eccezione di una cosa: per entrare nel dettaglio del prodotto (e quindi aggiungerlo al carrello), si può cliccare solo sopra l'immagine dello stesso. A mio avviso sarebbe stato meglio mettere anche un tasto "Visualizza dettagli", o per lo meno rendere anche il nome del prodotto cliccabile, magari apponendoli lo stile di un link (testo sottolineato e di un colore diverso).
+
+\paragraph{Filtri avanzati}
+A lato pagina sono presenti dei filtri avanzati che consentono di specializzare la ricerca in maniera molto fine. Essi implementano il principio della ricerca vincolata dinamica ma in modo progressivo: non è necessario per forza specificare un valore per tutti i filtri, ma al cambiamento anche di uno solo di essi, i risultati vengono aggiornati.
