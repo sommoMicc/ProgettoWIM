@@ -48,4 +48,28 @@ Per ogni prodotto è presente la foto, il nome, il rating medio (in stelle, da 0
 Ritengo che la rappresentazione dei risultati di ricerca sia stata fatta in maniera molto positiva, ad eccezione di una cosa: per entrare nel dettaglio del prodotto (e quindi aggiungerlo al carrello), si può cliccare solo sopra l'immagine dello stesso. A mio avviso sarebbe stato meglio mettere anche un tasto "Visualizza dettagli", o per lo meno rendere anche il nome del prodotto cliccabile, magari apponendoli lo stile di un link (testo sottolineato e di un colore diverso).
 
 \paragraph{Filtri avanzati}
-A lato pagina sono presenti dei filtri avanzati che consentono di specializzare la ricerca in maniera molto fine. Essi implementano il principio della ricerca vincolata dinamica ma in modo progressivo: non è necessario per forza specificare un valore per tutti i filtri, ma al cambiamento anche di uno solo di essi, i risultati vengono aggiornati.
+A lato pagina sono presenti dei filtri avanzati che consentono di specializzare la ricerca in maniera molto fine. Essi implementano il principio della ricerca vincolata dinamica ma in modo progressivo: non è necessario per forza specificare un valore per tutti i filtri, ma al cambiamento anche di uno solo di essi, i risultati vengono aggiornati.\\
+A mio parere, questa funzione è realizzata in modo molto semplice, intuitivo ed efficace.
+
+\paragraph{Ordinamento dei risultati e navigazione tra le pagine}
+Nella parte alta, sopra la prima riga di prodotti, sono presenti i comandi che consentono di cambiare l'oridne in cui i risultati sono visualizzati, ma anche di muoversi tra le pagine di ricerca. Poter ordinare i prodotti per prezzo (crescente o decrescente), per rilevanza, per popolarità ecc.. è cosa gradita. Inoltre, il fatto che i pulsanti di navigazione tra una pagina dei risultati e l'altra siano ripetuti anche nella parte alta dello schermo li rende sempre prontamente raggiungibili.
+
+\begin{figure}[!htb]
+	\center{\includegraphics[width=\textwidth]
+		{img/figura8.png}}
+	\caption{\label{fig:figura8}} Pagina di ricerca senza esito.
+\end{figure}
+
+In caso non ci siano prodotti che soddisfino i criteri di ricerca dell'utente, il fatto li viene comunicato tramite una pagina che fornisce anche una carrellata di prodotti più venduti, ai quali è statisticamente più facile che l'internauta sia interessato.
+
+\subsection{Dettaglio prodotto}
+\begin{figure}[!htb]
+	\center{\includegraphics[width=.71\textwidth]
+		{img/figura9.png}}
+	\caption{\label{fig:figura9}} Dettaglio di un prodotto. N.b.: l'area catturata nell'immagine è più della porzione visibile.
+\end{figure}
+Questa pagina presenta un prodotto nel dettaglio. Contiene il suo nome, il prezzo, le varianti acquistabili (in gusto e dimensione, ad esempio), la descrizione dettagliata, le foto, i commenti/recensioni e un set di prodotti correlati suggeriti (non presenti nello screenshot).\\ 
+L'articolo è rappresentato graficamente in 2D tramite delle foto che lo ritraggono con diverse angolature; tali foto possono essere anche zoomate/visualizzate a tutto schermo. Trovo positivo che non sia stata adottata una soluzione 3D, che avrebbe inutilmente causato del sovraccarico cognitivo anche perché onestamente ritengo inutile poter vedere più di un paio di angolazini di un sacchetto di integratori (l'importante non è la grafica del sacchetto, ma il contenuto!!).\\
+Il prezzo del prodotto è rappresentato per singola unità, al lordo degli sconti e al netto della spedizione. Cambiando variante (ad esempio selezionando un gusto diverso o, quando disponibile, una dimensione diversa) esso si aggiorna automaticamente. Qualche riga sotto di esso è presente anche la disponibilità, che da un'idea del tempo necessario all'evasione dell'ordine.\\
+La parte centrale della pagina è occupata dalla descrizione delle caratteristiche dell'articolo, quali ingredienti, usi consigliati, informazioni nutrizionali (molto importanti in prodotti del genere). Sebbene esse siano contenute in un menù a fisarmonica, quindi obblighino di fatto l'utente ad un click in più per accedere all'informazione desiderata, questa scelta permette di mantenere la pagina molto ordinata e, di conseguenza, diminuire lo sforzo computazionale necessario all'utente per trovare l'informazione desiderata.\\
+Nella parte inferiore della pagina sono presenti le recensioni effettuate da altri clienti, che possono aiutare nel valutare l'efficacia di un prodotto (anche se, soprattutto per gli alimenti/integratori, andrebbero prese con le pinze) e i prodotti correlati, utili se non si ha un'idea ben precisa delle proprie necessità.
