@@ -7,7 +7,8 @@ Ogni pagina del sito, sia homepage che interna, ha la stessa intestazione, che c
 	\center{\includegraphics[width=\textwidth]
 		{img/figura5.png}}
 	\caption{\label{fig:figura5}} Intestazione del sito, comune a tutte le pagine.
-\end{figure}
+\end{figure} \\
+Questo consente di presentare ovunque le risposte alle domande "Why","Who","What","How", aspetto molto rilevante e utile in caso di visitatore che raggiunga il sito tramite deep-linking.
 
 
 \subsection{Ricerca}
@@ -16,8 +17,8 @@ MyProtein offre centinaia di prodotti di eterogenee caratteristiche, che vanno d
     \item Un campo di testo, nel quale ci stanno circa 38 caratteri;
     \item Un tasto che scatena la ricerca, contenente l'icona della lente.
 \end{itemize}
-Le dimensioni del box di ricerca sono adeguate, considerando che la capienza minima consigliata è di circa 30 caratteri. Il tasto che scatena la ricerca, invece, ha solo l'icona della lente, senza testo. Anche se è stato dimostrato che gli utenti si trovano più a loro agio con la scritta "search" o "cerca", l'icona della lente è ormai una convenzione nel web. Finchè poi si scrive, il tasto si "evidenzia" colorandosi di bianco su sfondo blu, evidenziando il fatto che sia cliccabile, come visibile in figura 6. Inoltre, la ricerca può essere lanciata anche con il tasto "invio" della tastiera.\\
-Sempre in figura 6 sono visibili i suggerimenti di ricerca, calcolati in tempo reale mentre l'utente scrive sul campo di ricerca, divisi in due tipologie:
+Le dimensioni del box di ricerca sono adeguate, considerando che la capienza minima consigliata è di circa 30 caratteri. Il tasto che scatena la ricerca, invece, ha solo l'icona della lente, senza testo. Anche se è stato dimostrato che gli utenti si trovano più a loro agio con la scritta "search" o "cerca", l'icona della lente è ormai una convenzione nel web. Quando poi si scrive, il tasto si "evidenzia" colorandosi di bianco su sfondo blu, evidenziando il fatto che sia cliccabile, come visibile in figura 6. Inoltre, la ricerca può essere lanciata anche con il tasto "invio" della tastiera.\\
+Sempre in figura \ref{fig:figura6} sono visibili i suggerimenti di ricerca, calcolati in tempo reale mentre l'utente scrive sul campo di ricerca, divisi in due tipologie:
 \begin{itemize}
     \item completamento della query in base alle ricerche frequenti, nella parte superiore;
     \item prodotti più comuni suggeriti in base alla query scritta, nella parte inferiore.
@@ -52,7 +53,7 @@ A lato pagina sono presenti dei filtri avanzati che consentono di specializzare 
 A mio parere, questa funzione è realizzata in modo molto semplice, intuitivo ed efficace.
 
 \paragraph{Ordinamento dei risultati e navigazione tra le pagine}
-Nella parte alta, sopra la prima riga di prodotti, sono presenti i comandi che consentono di cambiare l'oridne in cui i risultati sono visualizzati, ma anche di muoversi tra le pagine di ricerca. Poter ordinare i prodotti per prezzo (crescente o decrescente), per rilevanza, per popolarità ecc.. è cosa gradita. Inoltre, il fatto che i pulsanti di navigazione tra una pagina dei risultati e l'altra siano ripetuti anche nella parte alta dello schermo li rende sempre prontamente raggiungibili.
+Nella parte alta, sopra la prima riga di prodotti, sono presenti i comandi che consentono di cambiare l'ordine in cui i risultati sono visualizzati, ma anche di muoversi tra le pagine di ricerca. Poter ordinare i prodotti per prezzo (crescente o decrescente), per rilevanza, per popolarità ecc.. è cosa gradita. Inoltre, il fatto che i pulsanti di navigazione tra una pagina dei risultati e l'altra siano ripetuti anche nella parte alta dello schermo li rende sempre prontamente raggiungibili.
 
 \begin{figure}[!htb]
 	\center{\includegraphics[width=\textwidth]
@@ -100,7 +101,7 @@ La pagina in figura 12 rappresenta quella che si ottiene in caso di errore 404. 
 
 \subsection{Menù e breadcrumb}
 Il menù del sito, in termini di usabilità, lo definirei "amore ed odio", e adesso cercherò di spiegare il perché. 
-Iniziando subito con gli aspetti negativi, nel sito in realtà ci sono due menù: uno all'inizio (visibile in figura \ref{fig:figura4}, che chiamerò "Menu A") uno alla fine di ogni pagina (riportato in figura \ref{fig:figura13}, che chiamerò "Menu B"). Sebbene molti siti adottino uno sdoppiamento simile, rendendolo quasi uno standard \textit{de-facto}, ritengo disorientante avere due menù simili che, di primo acchitto possono sembrare simili, ma in realtà presentano numerose differenze sia in termini contenutistici che di interazione. Per portare un esempio, la sezione "chi siamo" è contenuta solo nel "bottom menù", mentre quella "Prodotti" sia nell'header che nel footer. Tuttavia, se nel menù in figura \ref{fig:figura4} ogni categoria di prodotto ha un sottomenù ordinato e organizzato per sezioni, in quello della figura \ref{fig:figura13} tale funzionalità si perde. Ciò comporta che, se voglio ad esempio selezionare il prodotto "BCAA Integratori":
+Iniziando subito con gli aspetti negativi, nel sito in realtà ci sono due menù: uno all'inizio (visibile in figura \ref{fig:figura4}, che chiamerò "Menu A") e uno alla fine di ogni pagina (riportato in figura \ref{fig:figura13}, che chiamerò "Menu B"). Sebbene molti siti adottino un analogo sdoppiamento, rendendolo quasi uno standard \textit{de-facto}, ritengo disorientante avere due menù che, di primo acchitto possono sembrare simili, ma in realtà presentano numerose differenze sia in termini contenutistici che di interazione. Per portare un esempio, la sezione "chi siamo" è contenuta solo nel "bottom menù", mentre quella "Prodotti" sia nell'header che nel footer. Tuttavia, se nel menù in figura \ref{fig:figura4} ogni categoria di prodotto ha un sottomenù ordinato e organizzato per sezioni, in quello della figura \ref{fig:figura13} tale funzionalità si perde. Ciò comporta che, se voglio ad esempio selezionare il prodotto "BCAA Integratori":
 \begin{itemize}
 	\item Nel "Menù A" è sufficiente posizionare il mouse sopra la voce "Nutrizione", recarsi nella colonna "Amminoacidi" e cliccare su "BCAA Integratori" (totale click realizzati: 1);
 	\item Nel "Menù B", se si clicca sulla voce "Nutrizione", si viene reindirizzati alla pagina "Proteine", che non contiene in alcun modo la categoria di prodotto "BCAA Integratori". Bisognerà pertanto o usare la funzionalità del cerca o usare il "Menù A" come descritto nel punto precedente. Onestamente, questa cosa la trovo assurda.
